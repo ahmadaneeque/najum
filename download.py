@@ -47,6 +47,8 @@ def find_uglies():
                         os.remove(current_image_path)
                 except Exception as e:
                     print(str(e))
+
+
 def create_pos_n_neg():
     for file_type in ['neg']:        
         for img in os.listdir(file_type):
@@ -60,4 +62,6 @@ def create_pos_n_neg():
                     f.write(line)
                     
 
-create_pos_n_neg()
+# create_pos_n_neg()
+if __name__ == "__main__":
+    store_raw_images()
